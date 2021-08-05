@@ -1,63 +1,114 @@
 /* CSS stylesheet */
+#container {
+  display: flex;
+  background-color: #fc03d3;
+  flex-flow: row wrap;
+  justify-content: space-around; 
+  
+}
+#container-top {
+  margin: auto;
+  background-color: white;
+  width: 80%;
+  /*diplay: flex;*/
+  justify-content: center;
+  align-items: center;
+}
+
+#item-1, fig-caption, section {
+  order: 1;
+  text-align: center;
+  text-size: 45px;
+  /*display: block;
+  width: 75px;
+  height: 50px; */
+
+}
+
 #header-img {
-    margin-left: 5px;
-    margin-top: 5px;
-    width: 300px;
-    padding: 5px; 
-  }
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 300px;
+  padding: 5px; 
+}
+
+ol {
+  list-style-type: none;
+  padding-left: 0;
   
-  ol {
-    list-style-type: none;
-    padding-left: 0;
-    
-  }
+}
+
+.nav-link {
+  display: block;
+  padding-right: 5px;
+  margin: 10px;
+  height: 100%;
+  width: 130px;
+  flex-grow: 1;
+  text-align: center;
+  flex-basis: auto;
+}
+
+#realtor-pic {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 600px;
+}
+
+#header-img {
+  display: flex;
+
+}
+
+fig-caption {
+  display: block;
+}
+
+#video {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  font-size: 25px;
   
-  .nav-link {
-    display: inline-block;
-    padding-right: 5px;
-    position: center; 
-    
-  }
+}
+
+header {
+ position: fixed;
+  width: 100%;
+  top: 0px;
   
-  #realtor-pic {
-    margin-right: auto;
-    display: block;
-    width: 300px;
-  }
+ 
   
-  fig-caption {
-    display: block;
-  }
-  li {
-    list-style: none;
-  }
-  
+}
+body {
+  padding-top: 100px;
+  background-image: url('https://static.eporta.com/media/the-wallberry-flamingo-peel-and-stick-wallpaper-900-1590500215650-1801__c__.jpg');
+}
+
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+section {
+  display: block;
+  align-items: center;
+  padding-bottom: 10px;
+  border: 5px groove;
+  width: 60%;
+  margin: auto;
+}
+
+@media (max-width: 600px){
   header {
-   position: fixed;
-    width: 100%;
-    flex-direction: row;
     flex-wrap: wrap;
-    flex-flow: space-between;
-    padding: 15px;
-    background-color: yellow;
-    top: 0px;
-    align-items: center;
-    height: 75px;
-    justify-content: space-around;
-    
   }
-  nav li {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  @media (max-width: 600px){
-    header {
-      flex-wrap: wrap;
-    }
-  }
+}
